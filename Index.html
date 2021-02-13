@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    This is a simple page to demonstrate the flexbox with the help of the chatbox model.
+    <div class="parent">
+        <div id="chatBox" class="chatBox hide">
+            <div id="messages" class="messageBox">
+            </div>
+            <div class="messageBoxFooter">
+                <input id="inputMessage" type="text" placeholder="Message goes here...">
+                <button onclick=sendButtonClick() class="sendButton">Send</button>
+            </div>
+        </div>
+        <button onclick=botClick() class="chatButton">Click</button>
+    </div>
+    <script src="./Index.js"></script>
+</body>
+</html>
