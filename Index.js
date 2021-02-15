@@ -6,7 +6,7 @@ sendButtonClick = function(){
     parent = document.getElementById("messages");
     message = document.getElementById("inputMessage").value;
     document.getElementById("inputMessage").value = '';
-    parent.innerHTML += `<div class="leftMessage message">${message}</div><div class="rightMessage message">${message}</div>`;
+    parent.innerHTML += `<div class="rightMessage message">${message}</div><div class="leftMessage message">${message}</div>`;
     updateScroll();
 }
 
