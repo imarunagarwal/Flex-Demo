@@ -1,12 +1,24 @@
+body{
+    background-color: #313b47;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.heading{
+    text-align: center;
+    margin: 50px;
+}
+
 .parent{
     position: absolute;
     display: flex;
     flex-direction: column;
-    bottom: 2%;
-    right:2%;
+    bottom: 1.5rem;
+    right:1.5rem;
 }
 
 .chatBox{
+    margin-bottom: .5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -17,16 +29,22 @@
 }
 
 .chatButton{
-    background-color: #eb6464b3;
+    font-weight: 700;
+    font-size: 1.25rem;
+    background-color: #1dbfaf;
+    color: white;
     align-self: flex-end;
-    height:60px;
-    width:60px;
+    height:80px;
+    width:80px;
     border-radius: 50%;
     border: none;
 }
 
 .sendButton{
-    background-color: #eb6464b3;
+    background-color: #1dbfaf;
+    color: white;
+    border: none;
+    border-radius: 0 0.25rem 0.25rem 0;
 }
 
 input:focus,
@@ -47,7 +65,7 @@ input:focus,
 }
 
 .message{
-    background-color: #eb6464b3;
+    background-color: #1dbfaf;
     color           : white;
     border-radius   : 0 8px 16px 0;
     padding         : 0.5rem;
@@ -60,6 +78,9 @@ input:focus,
 
 #inputMessage{
     flex-grow: 1;
+    height: 1.5rem;
+    border: none;
+    border-radius: 0.25rem 0 0 0.25rem;
 }
 
 .rightMessage{
@@ -75,11 +96,11 @@ input:focus,
 }
 
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px #eb6464b3; 
+    box-shadow: inset 0 0 5px #1dbfaf; 
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background:  #eb6464b3; 
+    background:  #1dbfaf; 
     border-radius: 10px;
 }
